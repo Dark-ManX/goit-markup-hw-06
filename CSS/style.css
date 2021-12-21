@@ -258,6 +258,7 @@ a {
 .input-field {
   margin-bottom: 10px;
   position: relative;
+  outline: none;
 }
 .modal-input {
   width: 100%;
@@ -272,7 +273,7 @@ a {
 }
 .modal-input:focus {
   outline: none;
-  border: 1px solid var(--interactive-color);
+  border-color: var(--interactive-color);
 }
 .modal-input:focus ~ svg {
   fill: var(--interactive-color);
@@ -293,11 +294,12 @@ a {
   text-indent: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment:focus {
+  font-family: inherit;
+  outline: none;
   border-color: var(--interactive-color);
 }
 .agreement {
@@ -312,6 +314,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .agreement-text > a {
   color: var(--interactive-color);
   text-decoration-line: underline;
@@ -346,6 +349,9 @@ a {
   align-items: center;
   text-align: center;
   color: var(--header-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
 }
 
 /*=================== Our benefits */
@@ -536,6 +542,7 @@ a {
 .style {
   display: flex;
   align-items: baseline;
+  letter-spacing: 0.03em;
 }
 .address-container {
   min-width: 231px;
@@ -552,7 +559,6 @@ address,
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 address {
@@ -577,7 +583,6 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -603,6 +608,55 @@ address {
 }
 .join-link svg {
   fill: var(--header-color);
+}
+.container-request {
+  margin-left: auto;
+  width: 570px;
+  height: 86px;
+}
+.footer-request {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+.footer-fieldset {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+.footer-submit {
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--interactive-color);
+  color: var(--header-color);
+  cursor: pointer;
+}
+.footer-submit > svg {
+  margin-left: 10px;
+  fill: #fff;
 }
 
 /* ================== PORTFOLIO */
