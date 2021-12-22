@@ -376,7 +376,7 @@ a {
   color: var(--header-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  outline-color: currentColor
+  outline-color: currentColor;
   cursor: pointer;
 }
 
@@ -603,6 +603,7 @@ address {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--interactive-color);
+  outline: 1px solid var(--header-color);
 }
 
 .join-container > h3 {
@@ -633,6 +634,9 @@ address {
 .join-link:focus {
   background-color: var(--interactive-color);
 }
+.join-link:focus {
+  outline: 1px solid var(--header-color);
+}
 .join-link svg {
   fill: var(--header-color);
 }
@@ -647,6 +651,7 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--header-color);
+  margin-bottom: 20px;
 }
 .footer-fieldset {
   display: flex;
@@ -659,7 +664,9 @@ address {
   background-color: var(--background-color);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  outline: none;
+}
+.footer-input:focus {
+  outline: 1px solid var(--header-color);
 }
 .footer-submit {
   min-width: 200px;
